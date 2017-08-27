@@ -17,8 +17,8 @@ public class Runner {
 		EntityTransaction tx = entityManager.getTransaction(); //Prueba de inheritance
 		
 		tx.begin();
-		entityManager.persist(new PistaEncontrada("encontre una pista"));
-		entityManager.persist(new VehiculoDetectado(1, 10));
+		entityManager.persist(new Vehiculo("unaVTU","unaPatente"));
+		entityManager.persist(new Robo());
 		
 		tx.commit();
 		

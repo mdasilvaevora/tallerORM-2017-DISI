@@ -8,9 +8,8 @@ import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 
-//@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @Entity
-@Inheritance(strategy = InheritanceType.JOINED)
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public abstract class Evento {
 	@Id @GeneratedValue
 	private Long id;
